@@ -1,0 +1,11 @@
+### Register User
+POST http://localhost:8080/api/v1/auth/register
+Content-Type: application/json
+
+{
+  "username": "com.example.securitydemo.user",
+  "password": "com.example.securitydemo.user"
+}
+
+
+> {% client.global.set("com.example.securitydemo.auth-com.example.securitydemo.token", response.body.token);  %}
